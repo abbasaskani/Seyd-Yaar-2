@@ -1,0 +1,104 @@
+{
+  "skipjack": {
+    "label": {
+      "en": "Skipjack tuna",
+      "fa": "اسکیپ‌جک"
+    },
+    "scientific_name": "Katsuwonus pelamis",
+    "region": "W Arabian Sea",
+    "priors": {
+      "sst_opt_c": 27.65,
+      "sst_sigma_c": 1.125,
+      "chl_opt_mg_m3": 2.63,
+      "chl_sigma_log10": 0.32,
+      "current_opt_m_s": 0.34,
+      "current_sigma_m_s": 0.13,
+      "waves_hs_soft_max_m": 1.5,
+      "front_weights": {
+        "temp": 0.35,
+        "chl": 0.45,
+        "ssh": 0.2
+      },
+      "sss_opt_psu": 35.05,
+      "sss_sigma_psu": 0.325,
+      "o2_opt_mmol_m3": 202.5,
+      "o2_sigma_mmol_m3": 3.25,
+      "o2_lower_soft_mmol_m3": 196.0,
+      "mld_opt_m": 91.0,
+      "mld_sigma_m": 31.5
+    },
+    "layer_weights": {
+      "temp": 0.24,
+      "chl": 0.18,
+      "front": 0.18,
+      "current": 0.08,
+      "salinity": 0.08,
+      "oxygen": 0.1,
+      "mld": 0.08,
+      "eddy": 0.06
+    },
+    "ops_constraints": {
+      "waves_hs_soft_max_m": 1.5,
+      "currents_soft_max_m_s": 0.9,
+      "wind_soft_max_m_s": 9.0
+    },
+    "references": [
+      "Elith & Leathwick (2009) SDM overview",
+      "Phillips et al. (2006) MaxEnt",
+      "Renner & Warton (2013) MaxEnt~PPP",
+      "Lehodey et al. (2008) SEAPODYM"
+    ],
+    "notes": "Priors are defaults; tune with AIS-effort/feedback/ensemble for the target region."
+  },
+  "yellowfin": {
+    "label": {
+      "en": "Yellowfin tuna",
+      "fa": "یلّوفین"
+    },
+    "scientific_name": "Thunnus albacares",
+    "region": "W Arabian Sea",
+    "priors": {
+      "sst_opt_c": 27.77,
+      "sst_sigma_c": 1.115,
+      "chl_opt_mg_m3": 1.25,
+      "chl_sigma_log10": 0.28,
+      "current_opt_m_s": 0.315,
+      "current_sigma_m_s": 0.1225,
+      "waves_hs_soft_max_m": 1.5,
+      "front_weights": {
+        "temp": 0.35,
+        "chl": 0.45,
+        "ssh": 0.2
+      },
+      "sss_opt_psu": 35.05,
+      "sss_sigma_psu": 0.325,
+      "o2_opt_mmol_m3": 201.5,
+      "o2_sigma_mmol_m3": 2.75,
+      "o2_lower_soft_mmol_m3": 196.0,
+      "mld_opt_m": 93.5,
+      "mld_sigma_m": 33.25
+    },
+    "layer_weights": {
+      "temp": 0.24,
+      "chl": 0.18,
+      "front": 0.18,
+      "current": 0.08,
+      "salinity": 0.08,
+      "oxygen": 0.1,
+      "mld": 0.08,
+      "eddy": 0.06
+    },
+    "ops_constraints": {
+      "waves_hs_soft_max_m": 1.5,
+      "currents_soft_max_m_s": 0.8,
+      "wind_soft_max_m_s": 9.0
+    },
+    "references": [
+      "Elith & Leathwick (2009) SDM overview",
+      "Phillips et al. (2006) MaxEnt",
+      "Renner & Warton (2013) MaxEnt~PPP",
+      "Lehodey et al. (2008) SEAPODYM"
+    ],
+    "notes": "Priors are defaults; tune with AIS-effort/feedback/ensemble for the target region."
+  }
+}
